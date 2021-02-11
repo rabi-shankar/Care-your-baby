@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.careyoutbaby.swetarabi.babycare.NoInternetActivity">
+
+    <Button
+        android:id="@+id/tryagain"
+        android:layout_width="120dp"
+        android:elevation="1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="123dp"
+        android:textColor="@color/white"
+        android:background="@color/appColor"
+        android:text="Try Again"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/ic_signal_wifi_off_black_24dp"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="Can't Connect"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/textView15"
+        android:layout_alignEnd="@+id/tryagain" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black_t"
+        android:textAllCaps="false"
+        android:text="Please check your network connection."
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/tryagain"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

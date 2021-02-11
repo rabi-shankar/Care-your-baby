@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emergency_alert2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.careyoutbaby.swetarabi.babycare.EmergencyAlert2Activity">
+
+    <TextView
+        android:text="@string/pick_emergency_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/appColor"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:text="@string/emergency_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="@string/set_alert_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_alert_contact"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textInputLayout1"
+        android:layout_below="@+id/set_alert_contact"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textInputLayout2"
+        android:layout_below="@+id/textInputLayout1"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/number"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="@string/pick_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:background="@null"
+        android:textColor="@color/appColor"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:background="@color/appColor"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:onClick="next"/>
+
+    <TextView
+        android:text="@string/change_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/textView11"
+        android:textColor="@color/lightblack"
+        android:fontFamily="sans-serif-light"
+        android:textSize="10sp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
+

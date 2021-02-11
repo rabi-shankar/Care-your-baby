@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor"
+    tools:context="com.careyoutbaby.swetarabi.babycare.StartActivity">
+
+    <TextView
+        android:text="@string/Welcome_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_above="@+id/start"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:text="@string/welcome_to_baby_care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="32sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/welcomescreen"
+        android:id="@+id/imageView"
+        tools:ignore="ContentDescription"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/start"
+        android:textColor="@color/appColor"
+        android:onClick="next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</RelativeLayout>

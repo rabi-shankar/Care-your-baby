@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pick_places2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.careyoutbaby.swetarabi.babycare.PickPlaces2Activity">
+
+    <TextView
+        android:text="@string/pick_up_to_6_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker1"
+                android:id="@+id/pick1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker2"
+                android:id="@+id/pick2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker3"
+                android:id="@+id/pick3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker4"
+                android:id="@+id/pick4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.17" />
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker5"
+                android:id="@+id/pick5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--include picker activity-->
+            <include layout="@layout/placepicker6"
+                android:id="@+id/pick6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/you_can_change_this_later"
+            android:textAlignment="center"
+            android:textColor="@color/lightblack"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appColor"
+            android:onClick="next"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/set_up_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appColor"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30sp"
+        android:id="@+id/textView1"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/choose_location_that_define_your_boundary_base_on_selected_location_a_close_boundary_is_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="See more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seemore"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="14sp"
+        android:textColor="@color/appColor"
+        android:layout_marginStart="21dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView1" />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.careyoutbaby.swetarabi.babycare.Map_launcher">
+
+    <!--include map activity-->
+    <include layout="@layout/activity_maps"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:background="@color/t_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="87sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                app:srcCompat="@drawable/ic_directions_walk_black_24dp"
+                android:id="@+id/imageView1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="87sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                app:srcCompat="@drawable/ic_my_location_black_24dp"
+                android:id="@+id/imageView2"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="87sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                app:srcCompat="@drawable/ic_crop_free_black_24dp"
+                android:id="@+id/imageView3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="87sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                app:srcCompat="@drawable/ic_autorenew_black_24dp"
+                android:id="@+id/imageView4"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/t_white"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1x"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/ic_edit_location_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/ic_visibility_off_black_24dp"
+                android:id="@+id/imageView2x"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "608708339237",
+    "firebase_url": "https://babycare-a7937.firebaseio.com",
+    "project_id": "babycare-a7937",
+    "storage_bucket": "babycare-a7937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608708339237:android:6d26fd94f96adc07",
+        "android_client_info": {
+          "package_name": "com.careyoutbaby.swetarabi.babycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608708339237-i36cqprball7qj9432p527uajgq94tun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careyoutbaby.swetarabi.babycare",
+            "certificate_hash": "88cd60f2d409d5c356c3c55b8b13dc81db05ddaa"
+          }
+        },
+        {
+          "client_id": "608708339237-6s7u903ntjhk38k51ej3hjk5jvmkr2cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRTFovvkA8KKcV2CEfQOQWuHoY7LIF9no"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608708339237-6s7u903ntjhk38k51ej3hjk5jvmkr2cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
